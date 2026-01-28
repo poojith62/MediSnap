@@ -18,6 +18,9 @@ MediSnap is a prescription parsing system designed to extract structured medical
 
 The system processes handwritten prescription images using OCR (Optical Character Recognition), applies NLP techniques to extract relevant entities, and produces a structured JSON file containing all extracted data.
 
+## 📐 System Architecture
+
+![MediSnap Architecture](Architecture-diagram.png)
 
 
 ⚙️ Workflow
