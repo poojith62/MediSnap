@@ -1,41 +1,47 @@
-🔎 Project Overview
+## 🔎 Project Overview
 
-MediSnap is a prescription parsing system designed to extract structured medical information from handwritten doctor prescriptions. The core objective of this system is to make medical prescriptions more readable, structured, and accessible by automatically identifying and categorizing essential details such as:
+**MediSnap** is a prescription parsing system designed to extract structured medical information from **handwritten doctor prescriptions**. The core objective of this system is to make medical prescriptions more **readable, structured, and accessible** by automatically identifying and categorizing essential medical details.
 
-    Patient information (Name, Age, Gender)
-    
-    Doctor details
-    
-    Date of prescription
-    
-    Diagnoses / Conditions
-    
-    Medications with dosage & duration
-    
-    Precautions & warnings
-    
-    Reminders and follow-up notes
+### 📋 Information Extracted
 
-The system processes handwritten prescription images using OCR (Optical Character Recognition), applies NLP techniques to extract relevant entities, and produces a structured JSON file containing all extracted data.
+- **Patient Information** (Name, Age, Gender)
+- **Doctor Details**
+- **Date of Prescription**
+- **Diagnoses / Medical Conditions**
+- **Medications** (Name, Dosage, Duration)
+- **Precautions & Warnings**
+- **Reminders and Follow-up Notes**
+
+The system processes handwritten prescription images using **OCR (Optical Character Recognition)**, applies **NLP techniques** to extract relevant entities, and generates a **structured JSON output** containing all the extracted data.
+
+---
 
 ## 📐 System Architecture
 
-![MediSnap Architecture](Architecture-diagram.png)
+<p align="center">
+  <img src="Architecture-diagram.png" alt="MediSnap Architecture Diagram" width="900"/>
+</p>
 
+---
 
-⚙️ Workflow
+## ⚙️ Workflow
 
-    Input Upload
-      User uploads a handwritten prescription image.
-    
-    OCR Processing
-      Image text is extracted using OCR.
-    
-    Entity Extraction
-      NLP identifies relevant entities (patient details, doctor, medications, precautions, reminders).
-    
-    Structuring
-      Extracted data is organized into a JSON schema for easy interpretation.
-    
-    Output
-      JSON file is generated and displayed in a readable format on the UI.
+### 1️⃣ Input Upload  
+The user uploads a handwritten prescription image through the application interface.
+
+### 2️⃣ OCR Processing  
+The uploaded image is processed using OCR to extract raw text from handwritten content.
+
+### 3️⃣ Entity Extraction  
+NLP techniques are applied to identify and extract relevant entities such as:
+- Patient details  
+- Doctor information  
+- Medications  
+- Dosage and duration  
+- Precautions and reminders  
+
+### 4️⃣ Data Structuring  
+The extracted information is organized into a **well-defined JSON schema** for easy interpretation and further use.
+
+### 5️⃣ Output Generation  
+The structured JSON data is displayed in a **clean, readable format** on the user interface.
